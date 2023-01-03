@@ -3,3 +3,5 @@ function greetingsByName (input) {
     console.log (`Hello, ${name}!`);
 }
 greetingsByName (["Frank", "Michael", "Ivan"]);
+
+// Hello
