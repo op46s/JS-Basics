@@ -3,5 +3,3 @@ function greetings () {
 }
 
 greetings(); 
-
-// Hello

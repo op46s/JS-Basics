@@ -4,5 +4,3 @@ function convertor (input) {
     console.log (cms);
 }
 convertor ([8]);
-
-// Hello

@@ -9,5 +9,3 @@ function concatenateData (input){
 }
 
 concatenateData(["George", "Ivanov", 42, "Sofia"]);
-
-// Hello

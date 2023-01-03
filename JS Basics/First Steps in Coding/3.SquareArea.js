@@ -6,5 +6,3 @@ function squareArea (input) {
 
 }
 squareArea ([2, 3, 4, 5]);
-
-// Hello

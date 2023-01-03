@@ -9,8 +9,6 @@
 convertor ([22, 100, 12.5]) 
 
 
- // 7
-
 
 function namesLists(input) {
 
