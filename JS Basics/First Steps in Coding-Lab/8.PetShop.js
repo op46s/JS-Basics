@@ -1,10 +1,9 @@
 function zooShop (input) {
 
-    let dogFoodTotal = (Number(2,50) * input [0]);
-    let catFoodTotal = (Number(4) * input[1]);
-    console.log ("");
+    let dogFoodTotal = (input[0]) * 2.50;
+    let catFoodTotal = (input[1]) * 4;
+    let totalPrice = dogFoodTotal + catFoodTotal;
+    console.log (totalPrice + " lv.");
 }
 
-zooShop ([5], [4]);
-
-//	"{крайната сума} lv."
+zooShop ([4, 5]);
