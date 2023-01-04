@@ -7,7 +7,7 @@ function moneyNeeded (input) {
     let discountAmount = ((100 - discountPercent) / 100);
 
       console.log ((pens + marker + cleaningLiquid) * discountAmount) ;
-
+      // console.log (discountAmount);
 }
 
-moneyNeeded (["4", "2", "5", "13"]);
+moneyNeeded (["2", "3", "4", "25"]);
