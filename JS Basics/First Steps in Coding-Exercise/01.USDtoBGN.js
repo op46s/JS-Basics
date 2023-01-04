@@ -6,4 +6,4 @@ function usdtobgn (input) {
 
 }
 
-usdtobgn ([12.5]);
+usdtobgn (["12.5"]);
