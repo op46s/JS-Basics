@@ -5,9 +5,10 @@ function moneyNeeded (input) {
     let cleaningLiquid = 1.20 * Number(input[2]);
     let discountPercent = Number (input[3]);
     let discountAmount = ((100 - discountPercent) / 100);
+   
 
-      console.log ((pens + marker + cleaningLiquid) * discountAmount) ;
-      // console.log (discountAmount);
+     // console.log ((pens + marker + cleaningLiquid) * discountAmount) ;
+      console.log (discountAmount);
 }
 
-moneyNeeded (["2", "3", "4", "25"]);
+moneyNeeded (["5", "10", "10", "1"]);

@@ -4,7 +4,8 @@ function radiansTD (input){
     let gradus = ((radians * 180) / Math.PI);
 
     console.log(gradus);
+    console.log(Math.PI * 1);
 
 }
 
-radiansTD ([6.2832]);
+radiansTD (["6.2832"]);
