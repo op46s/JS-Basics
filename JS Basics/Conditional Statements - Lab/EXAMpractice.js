@@ -1,7 +1,7 @@
 // Exam Practice Tasks //
 //  ................. 01 ....................// 
-/*
- function oscars (input) {
+
+function oscars (input) {
 
         let rentCost = Number(input[0]);
         let statuesCost = rentCost * 0.7;
@@ -13,8 +13,12 @@
             console.log(result); 
 }
 oscars (["5555"]); 
-*/
+
+
+
+
 //  ................. 02 ....................// 
+/*
 
 function programingFun(input)  {
 
@@ -26,17 +30,24 @@ function programingFun(input)  {
     let totalMovieTime = (framesAmount * singleFrameTime) + preparation; 
 
     let timeDifference = totalMovieTime - screeningTime;
-     console.log (totalMovieTime);
-     console.log (screeningTime);
-       
-    if (totalMovieTime <= screeningTime) {
-            console.log ("You managed to finish the movie on time! You have " + timeDifference + " minutes left!"); 
-        }
 
+    let results =  Math.abs(timeDifference); // Makes the result always positive Number (if the result is (-6) it will transform it to (6) 
+    let finalResults = Math.round(results); // Rounds up the result to the closest full number (if result is 1.55 it will round it to 2)
+       // console.log(timeDifference) ;
+       // console.log(results);
+      //  console.log(finalResults);
+    if (totalMovieTime <= screeningTime) {
+            console.log ("You managed to finish the movie on time! You have " + finalResults + " minutes left!"); 
+        }
         else {
-            console.log ("Time is up! To complete the movie you need " + timeDifference +" minutes."); 
+            console.log ("Time is up! To complete the movie you need " + finalResults +" minutes."); 
         }
 
 }
 
-programingFun (["60", "15", "3"]);
+//programingFun (["55", "15", "3"]);
+programingFun (["120", "11", "10"]);
+*/
+
+
+//  ................. 02 ....................// 
