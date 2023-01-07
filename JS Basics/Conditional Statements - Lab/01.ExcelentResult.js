@@ -1,4 +1,4 @@
-function excelent (input) {
+function excellent (input) {
 
 
     
