@@ -1,13 +1,14 @@
 function weatherForecast(input) {
 
+let sunnyWeather = "sunny"; 
 
+    if (input[0] == sunnyWeather) {
+            console.log("It's warm outside!");
+    } else {
+        console.log("It's cold outside!");
 
-// Вход	    Изход
-// sunny	It's warm outside!
-// cloudy	It's cold outside!
-// snowy	It's cold outside!
-
-
+    }
 
 }
 
+weatherForecast (["grvew"])
