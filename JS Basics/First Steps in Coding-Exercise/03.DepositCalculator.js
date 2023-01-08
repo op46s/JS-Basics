@@ -9,4 +9,4 @@ function deposits (input) {
 
 }
 
-deposits (["200", "3", "5.7"]);
+deposits (["2350", "6", "7"]);
