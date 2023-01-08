@@ -10,5 +10,4 @@ let sunnyWeather = "sunny";
     }
 
 }
-
 weatherForecast (["grvew"])
