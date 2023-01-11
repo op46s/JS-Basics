@@ -1,20 +1,18 @@
 function guessTheFigure (input) {
 
-    let squareArea = Math.pow(Number(input[1]), 2);
-    let rectangleArea = Number(input[1]) * Number(input[2]);
-    let circleArea = (Math.pow(Number(input[1]), 2) * Math.PI);
-    let triangleArea = (Number(input[1]) * Number(input[2])) / 2; 
+    let type = input[0];
+    let result = "";
 
-    if (input[0] === "square") {
-        console.log(squareArea.toFixed(3))
-    } else if (input[0] === "rectangle") {
-        console.log(rectangleArea.toFixed(3)) 
-    } else if (input[0] === "circle") {
-        console.log(circleArea.toFixed(3));
+    if (type === "square") {
+        result = Math.pow(Number(input[1]), 2);
+    } else if (type === "rectangle") {
+        result = Number(input[1]) * Number(input[2]);
+    } else if (type === "circle") {
+        result = (Math.pow(Number(input[1]), 2) * Math.PI);
     } else {
-        console.log(triangleArea.toFixed(3));
+        result = (Number(input[1]) * Number(input[2])) / 2; 
     }
-
+    console.log(result.toFixed(3));
 }
 
-guessTheFigure(["triangle", "4.5", "20"]); 
+guessTheFigure(["triangle", "4.5", "20"]);
