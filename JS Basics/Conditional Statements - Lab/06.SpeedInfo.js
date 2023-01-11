@@ -15,4 +15,4 @@ function speedInfo (input) {
     }
 }
 
-speedInfo([126]);
+speedInfo(["3123"]);
