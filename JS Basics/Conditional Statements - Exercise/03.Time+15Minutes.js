@@ -5,20 +5,17 @@ function fifteenMinutes (input) {
     let addMinutes = minutes+15;
 
     if (addMinutes >= 60) {
-        hours = hours + 1;
+        hours += 1;  // hours += 1;  ===  hours = hours + 1;
         minutes = addMinutes - 60; 
     } else {
-        hours = hours;
-        minutes = minutes+15;
+        minutes = addMinutes;
     }
     
     if (hours == 24) {
         hours = 0;
-    } else {
-        hours = hours;
     }
 
-    if (minutes < 10 & hours != 24) {
+    if (minutes < 10) {
         console.log(`${hours}:0${minutes}`)
     } else {
         console.log(`${hours}:${minutes}`)
@@ -26,7 +23,7 @@ function fifteenMinutes (input) {
 
 }
 
-fifteenMinutes(["12", "49"]);
+fifteenMinutes(["11", "23"]);
 
 
 

@@ -1,20 +1,20 @@
-function godzilla (input) {
+function godzilla(input) {
 
     let movieBudget = Number(input[0]);
     let decoration = movieBudget * 0.1;
     let statists = Number(input[1]);
-    let singleDressPrice = Number(input[2]); 
+    let singleDressPrice = Number(input[2]);
     let totalDressPrice = Number(input[2]) * Number(input[1]);
     let totalMovieCost = 0;
     let difference = 0;
 
     if (statists >= 150) {
-        totalMovieCost = (totalDressPrice * 0.9)+ decoration;
+        totalMovieCost = (totalDressPrice * 0.9) + decoration;
     } else {
         totalMovieCost = totalDressPrice + decoration;
     }
-    
-    difference = movieBudget - totalMovieCost; 
+
+    difference = movieBudget - totalMovieCost;
 
     if (difference >= 0) {
         console.log("Action!");

@@ -1,11 +1,11 @@
-function racers (inputDta) {
+function racers(inputDta) {
 
     racerOne = Number(inputDta[0]);
     racerTwo = Number(inputDta[1]);
     racerThree = Number(inputDta[2]);
-    
-    let minutes = Math.floor((racerOne + racerTwo + racerThree) / 60); 
-    let seconds = (racerOne + racerTwo + racerThree) % 60; 
+
+    let minutes = Math.floor((racerOne + racerTwo + racerThree) / 60);
+    let seconds = (racerOne + racerTwo + racerThree) % 60;
 
     if (seconds < 10) {
         console.log(`${minutes}:0${seconds}`);
@@ -14,4 +14,4 @@ function racers (inputDta) {
     }
 }
 
-racers (["14", "16","10"]);
+racers(["14", "16", "10"]);
