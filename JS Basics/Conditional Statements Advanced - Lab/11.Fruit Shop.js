@@ -19,11 +19,10 @@ function fruitShop(input) {
             case "kiwi": 
             case "pineapple": 
             case "grapes": isFruit = 1; break;
-            default : isFruit = 0;
+            default : isFruit = 2; break;
     }
 
-
-    if (day === "Saturday" || day === "Sunday") {
+    if ((day === "Saturday" || day === "Sunday") && (isFruit == 1)) {
         isWeekend = true;
 
         switch (fruitType) { 
@@ -38,7 +37,7 @@ function fruitShop(input) {
         endPrice = fruitPrice * amount
         console.log(endPrice.toFixed(2));
 
-    } else if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thursday" || day === "Friday") {
+    } else if ((day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thursday" || day === "Friday") && (isFruit == 1))  {
         isWeekDay = true;
         switch (fruitType) {
             case "banana": fruitPrice = 2.50; break;
@@ -51,7 +50,7 @@ function fruitShop(input) {
         }
         endPrice = fruitPrice * amount
         console.log(endPrice.toFixed(2));
-    } else if ((isWeekDay != true && isWeekend != true) || (isFruit !=1)) {
+    } else if ((isWeekDay != true && isWeekend != true)) {
         console.log("error")
     }
 }
