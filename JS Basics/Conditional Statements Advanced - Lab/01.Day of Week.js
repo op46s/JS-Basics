@@ -14,4 +14,4 @@ function dayOfTheWeek (input) {
     }
 }
 
-dayOfTheWeek(["3"])
+dayOfTheWeek(["3"]);

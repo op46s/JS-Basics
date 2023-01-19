@@ -8,7 +8,6 @@ function fruitShop(input) {
     let isDay = 0;
     let endPrice = 0;
 
-
     switch (day) {
         case "Saturday" : 
         case "Sunday" :  
