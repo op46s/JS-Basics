@@ -40,14 +40,7 @@ function fishingBoat (input) {
     }     
 
 }
-
-fishingBoat(["3000",
-"Summer",
-"11"]);
-fishingBoat(["3600",
-"Autumn",
-"6"]);
-fishingBoat(["2000",
-"Winter",
-"13"]);
+fishingBoat(["3000", "Summer", "11"]);
+fishingBoat(["3600", "Autumn", "6"]);
+fishingBoat(["2000", "Winter","13"]);
 
