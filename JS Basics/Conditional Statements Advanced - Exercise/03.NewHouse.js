@@ -18,7 +18,7 @@ function newHouse (input) {
     }
 
     if (flower === "Roses" && amountFlowers > 80) {
-        discount = 0.1;
+        discount = 0.9;
     }  
     if (flower === "Dahlias" && amountFlowers > 90) {
         discount = 0.85;
@@ -34,14 +34,16 @@ function newHouse (input) {
     }
 
     totalPrice = singleFlowerPrice * amountFlowers * discount;
-    if (budget > totalPrice) {
+    if (budget >= totalPrice) {
         result = budget - totalPrice;
         console.log(`Hey, you have a great garden with ${amountFlowers} ${flower} and ${result.toFixed(2)} leva left.`)
     } else {
         result = totalPrice - budget;
-        console.log(`Not enough money, you need ${result.toFixed(2)} leva more.`)
+        console.log(`Not enough money, you need ${result.toFixed(2)} leva more.`);
 
     }
 }
-newHouse(["Roses", "55", "250"]);
-newHouse(["Tulips", "99", "260"]);
+//newHouse(["Roses", "55", "250"]);
+//newHouse(["Tulips", "88", "260"]);
+newHouse(["Narcissus", "121", "360"]);
+newHouse(["Narcissus", "119", "360"]);
