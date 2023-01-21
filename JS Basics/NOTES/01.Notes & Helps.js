@@ -1,3 +1,5 @@
+/* --------------------------------------------------  N O T E S  ----------------------------------------------------------------- */
+
 function testing() {
 
 console.log(123456 % 100 == 56); // This will take the last two digits from the number so 12345 % 1000 it will return 345)
@@ -5,9 +7,7 @@ console.log(123456 % 100 == 56); // This will take the last two digits from the 
 }
 testing();
 
-
-
-
+/* ------------------------------------------------------------------------------------------------------------------------------ */
 
 function switchTest (input) {
 
@@ -24,5 +24,23 @@ function switchTest (input) {
 
 switchTest(["Pesho"]);
 
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+function charAt (input) {
+
+    let text = input[0];
+    let letters = text.charAt(2); 
+    
+    console.log(letters)
+    
+    }
+    charAt(["Martins"])
 
 
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+let number1 = input[0].toString();   // Transform from number to string
+let number2 = input[0] + "";         // Transform from number to string another option. Number + String is always equal to String.
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
