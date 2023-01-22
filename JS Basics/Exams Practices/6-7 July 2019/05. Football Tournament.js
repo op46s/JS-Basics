@@ -4,21 +4,38 @@ function footballTournament (input) {
     let teamName = input[index++];
     let gamesPlayed = Number(input[index++]);
 
-    let win = 3;
-    let draw = 1; 
-    let lose = 0;
+    let totalWins = 0;
+    let totalLoses = 0;
+    let totalDraws = 0;
+
+    let totalPoints =0;
     
     if (gamesPlayed === 0) {
         console.log(`${teamName} hasn't played any games during this season.`)
     } else {
         for (i = 0; i < gamesPlayed; i++) {
             let currentMatch = input[index++];
-            console.log(currentMatch)
+            if (currentMatch === "W") {
+                totalWins++;
+            } else if (currentMatch === "D") {
+                totalDraws++;
+            } else {
+                totalLoses++;
+            }
         }
-        console.log("TEST")
+        
+        totalPoints = (totalWins * 3) + (totalDraws * 1);
+        percentWins = ((totalWins / gamesPlayed) * 100).toFixed(2);
+
+        console.log(`${teamName} has won ${totalPoints} points during this season.`);
+        console.log("Total stats:")
+        console.log("## W: "+totalWins)
+        console.log("## D: "+totalDraws)
+        console.log("## L: "+totalLoses)
+        console.log(`Win rate: ${percentWins}%`)
     }
      
 }
-footballTournament(["Liverpool", "10", "W", "D", "D", "W", "L", "W", "D", "D", "W", "W"]);
-//footballTournament(["Barcelona", "7", "W", "D", "L", "L", "W", "W", "D"]);
+//footballTournament(["Liverpool", "10", "W", "D", "D", "W", "L", "W", "D", "D", "W", "W"]);
+footballTournament(["Barcelona", "7", "W", "D", "L", "L", "W", "W", "D"]);
 //footballTournament(["Chelsea", "0"]);	
