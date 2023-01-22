@@ -1,8 +1,8 @@
 /* --------------------------------------------------  N O T E S  ----------------------------------------------------------------- */
 
 function testing() {
-
-console.log(123456 % 100 == 56); // This will take the last two digits from the number so 12345 % 1000 it will return 345)
+num = 997 % 10 
+console.log(num); // This will take the last digit from the number so 997 % 10 it will return 7)
 
 }
 testing();
