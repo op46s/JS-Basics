@@ -42,5 +42,26 @@ function charAt (input) {
 let number1 = input[0].toString();   // Transform from number to string
 let number2 = input[0] + "";         // Transform from number to string another option. Number + String is always equal to String.
 
+let a = 3333;
+let b = String(a); // Transform Number to String function .
+let c = a + ""; // Transform Number to string - Not preferred method.
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+function testingArray (input) {
+
+    let clientInput = 0;
+    let gameString = input[clientInput++];
+    let gameNumber = Number(input[clientInput++]);
+    
+    for (i = 0; i < gameNumber; i++ ) {
+       let newItem = input[clientInput++]
+        console.log(newItem);
+    }
+    
+}
+testingArray(["Liverpool", "10", "W", "D", "D", "W", "L", "W", "D", "D", "W", "W"]);
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
