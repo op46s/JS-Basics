@@ -62,6 +62,18 @@ function testingArray (input) {
     }
     
 }
+
+
+
+for (i = 2; i < input.length; i++) {   // Going trough the whole array can browse 
+    let typeOfGame = input[i];
+    console.log(typeOfGame);
+}
+
+
 testingArray(["Liverpool", "10", "W", "D", "D", "W", "L", "W", "D", "D", "W", "W"]);
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
