@@ -10,7 +10,7 @@ function logistics (input) {
     let train = 0;
     let totalTrains = 0;
 
-    for (i = 1; i < input.length; i++) {
+    for (i = 1; i <= numberOfLoads; i++) {
         let something = Number(input[i]);
         totalTons+=something;
         if (something <= 3) {
@@ -29,5 +29,5 @@ function logistics (input) {
     console.log(`${(totalTrucks / totalTons * 100).toFixed(2)}%`);
     console.log(`${(totalTrains / totalTons * 100).toFixed(2)}%`);
 }
-//logistics(["4", "1", "5", "16", "3"]);
-logistics(["5", "2", "10", "20", "1", "7"]);
+logistics(["4", "1", "5", "16", "3"]);
+//logistics(["5", "2", "10", "20", "1", "7"]);

@@ -9,14 +9,15 @@ function grades (input) {
     
     let totalAverage = 0;
 
-    for (i = 1; i < input.length; i++) {
-        let gradesList = Number(input[i])
-        totalAverage += gradesList;
-        if (gradesList < 3) {
+    for (i = 1; i <=studentsCount; i++) {
+        let grades = Number(input[i])
+        totalAverage += grades;
+        
+        if (grades < 3) {
             fail++;
-        } else if (gradesList >= 3 && gradesList < 4) {
+        } else if (grades >= 3 && grades < 4) {
             between34++;
-        } else if (gradesList >= 4 && gradesList < 5){
+        } else if (grades >= 4 && grades < 5){
             between45++;
         } else {
             topStudents++;
@@ -29,4 +30,4 @@ function grades (input) {
         console.log(`Average: ${(totalAverage / studentsCount).toFixed(2)}`);
 }
 grades(["10", "3.00", "2.99", "5.68", "3.01", "4", "4", "6.00", "4.50", "2.44", "5"]);
-grades(["6", "2", "3", "4", "5", "6", "2.2"]);
+//grades(["6", "2", "3", "4", "5", "6", "2.2"]);
