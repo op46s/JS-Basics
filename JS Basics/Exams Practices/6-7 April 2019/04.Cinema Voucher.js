@@ -26,7 +26,6 @@ function cinemaVoucher (input) {
     } else {
         others++;
     }
-
     budget -= price;
 
     wordS = input[index];
