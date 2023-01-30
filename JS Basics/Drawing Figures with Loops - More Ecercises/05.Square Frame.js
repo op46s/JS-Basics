@@ -1,7 +1,7 @@
 function squareFrame(input) {
  
 let digit = Number(input[0]);
-let minus = " -"
+let minus = " -";
 
     console.log("+" + minus.repeat(digit-2) + " +");
 
@@ -11,6 +11,6 @@ let minus = " -"
 
     console.log("+" + minus.repeat(digit-2) + " +");
 }
-squareFrame(["5"]);
+squareFrame(["3"]);
 
 
