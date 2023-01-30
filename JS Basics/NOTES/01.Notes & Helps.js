@@ -76,9 +76,27 @@ testingArray(["Liverpool", "10", "W", "D", "D", "W", "L", "W", "D", "D", "W", "W
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
 
-git add -A to add all files new files, changes and removed files.
-git commit -m "Your message" to save the changes done in the files.
-git push -u origin master to send your committed changes to a remote repository, where the local branch is named master to the remote named origin
+// git add -A to add all files new files, changes and removed files.
+// git commit -m "Your message" to save the changes done in the files.
+// git push -u origin master to send your committed changes to a remote repository, where the local branch is named master to the remote named origin
 
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+function whileLoop (input) {
+
+    let index = 0;
+    let myNumbers = input[index];
+    index++;
+    
+        while (myNumbers !== "Stop") {
+            console.log(myNumbers);
+            myNumbers = input[index];
+            index++
+        }
+    
+    }
+    whileLoop([1,2,3,4,5,6, "Stop"]);
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
