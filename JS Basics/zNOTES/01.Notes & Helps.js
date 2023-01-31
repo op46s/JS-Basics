@@ -100,3 +100,8 @@ function whileLoop (input) {
     whileLoop([1,2,3,4,5,6, "Stop"]);
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+let myMinNumber = Number.MIN_SAFE_INTEGER; // The Minimum number 
+let myMaxNumber = Number.MAX_SAFE_INTEGER; // The Maximum Number 
