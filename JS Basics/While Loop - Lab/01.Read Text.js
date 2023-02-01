@@ -1,14 +1,16 @@
 function readText(input) {
 
     let index = 0;
-    let arrElement = input[index];
+    let name = input[index];
     index++;
 
-    while (arrElement !== "Stop") {
-        console.log(arrElement);
-        arrElement = input[index];
+    while (name !== "Stop") {
+        
+        console.log(name);
+        name = input[index];
         index++;
     }
+
 } 
 readText(["Sofia",
 "Berlin",
