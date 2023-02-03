@@ -11,15 +11,28 @@ function examPreparation(input) {
     let badScores = 0;
 
         while (taskName !== "Enough") {
-            taskName = input[index];
-            index++;
-            totalTasks++;
-            average+=taskName
-            lastProblem = taskName;
-            if (taskName <= 4) {
-                badScores++
+            if (taskName.length > 1)  {
+                lastProblem = taskName;
             }
+            taskName = input[index];
+            let scores = Number(input[index]);
+            index++;
+            
+               
+                if (!isNaN(scores)) {
+                average+=Number(taskName);
+                totalTasks++;
+                }
+                if (taskName <= 4) {
+                    badScores++    
+                } if (badScores >= allowedBadScores) {
+                    console.log(`You need a break, ${badScores} poor grades.`);
+                    return;
+                }     
         }
+        console.log(`Average score: ${(average / totalTasks).toFixed(2)}`);
+        console.log(`Number of problems: ${totalTasks}`)
+        console.log(`Last problem: ${lastProblem}`);
 }
 examPreparation(["3",
 "Money",
@@ -30,7 +43,8 @@ examPreparation(["3",
 "5",
 "Bus",
 "6",
-"Enough"]);
+"Enough"])
+
 
 // examPreparation(["2",
 // "Income",
@@ -38,4 +52,4 @@ examPreparation(["3",
 // "Game Info",
 // "6",
 // "Best Player",
-// "4"])
+// "4"]);
