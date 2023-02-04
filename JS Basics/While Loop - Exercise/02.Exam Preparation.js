@@ -11,18 +11,14 @@ function examPreparation(input) {
     let badScores = 0;
 
         while (taskName !== "Enough") {
-            if (taskName.length > 1)  {
+            if (isNaN(taskName))  {
                 lastProblem = taskName;
-            }
-            taskName = input[index];
-            let scores = Number(input[index]);
-            index++;
-            
-               
-                if (!isNaN(scores)) {
+            } else {
                 average+=Number(taskName);
                 totalTasks++;
-                }
+            }
+            taskName = input[index];
+            index++;
                 if (taskName <= 4) {
                     badScores++    
                 } if (badScores >= allowedBadScores) {
@@ -34,22 +30,22 @@ function examPreparation(input) {
         console.log(`Number of problems: ${totalTasks}`)
         console.log(`Last problem: ${lastProblem}`);
 }
-examPreparation(["3",
-"Money",
-"6",
-"Story",
-"4",
-"Spring Time",
-"5",
-"Bus",
-"6",
-"Enough"])
-
-
-// examPreparation(["2",
-// "Income",
-// "3",
-// "Game Info",
+// examPreparation(["3",
+// "Money",
 // "6",
-// "Best Player",
-// "4"]);
+// "Story",
+// "4",
+// "Spring Time",
+// "5",
+// "Bus",
+// "6",
+// "Enough"])
+
+
+examPreparation(["2",
+"Income",
+"3",
+"Game Info",
+"6",
+"Best Player",
+"4"]);
