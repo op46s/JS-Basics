@@ -7,63 +7,48 @@ let cCounter = 0;
 let oCounter = 0;
 let nCounter = 0;
 
-let bigCounter = 0;
-
 let finalWord = "";
+let wordOne = "";
 
     while (true) {
+
         currentLetter = input[index];
-
-        if ((currentLetter === "End") && (bigCounter > 1)){
-            console.log(finalWord)
-            return;
-        } else if ((currentLetter === "End") && (bigCounter <= 1)) {
-            console.log(finalWord)
-            return;
+        if (!/[a-zA-Z]/.test(currentLetter)) {
+            index++;
+            continue;
         }
-
         if (currentLetter == "n")  {
             nCounter++;
             if (nCounter == 1) {
                 index++;
                 continue;
             } 
-        }
-
-        else if (currentLetter == "o")  {
+        } else if (currentLetter == "o")  {
             oCounter++;
             if (oCounter == 1) {
                 index++;
                 continue;
             }
-        }    
-
-        else if (currentLetter == "c")  {
+        } else if (currentLetter == "c")  {
             cCounter++;
             if (cCounter == 1) {
                 index++;
                 continue;
             }
         }
-
         if (cCounter >= 1 && oCounter >= 1 && nCounter >= 1)  {
-            bigCounter++;
+            wordOne = finalWord + " ";
             finalWord += " ";
             cCounter = 0;
             nCounter = 0;
             oCounter = 0;
-            
-            
             continue;
         }
 
-       
-
-        if (!/[a-zA-Z]/.test(currentLetter)) {
-            index++;
-            continue;
-        }
-
+        if(currentLetter === "End") {
+            console.log(wordOne);
+            return;
+        } 
         finalWord += currentLetter;
         currentLetter = input[index];
         index++;
