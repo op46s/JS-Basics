@@ -8,13 +8,11 @@ let totalSum = 0;
 let totalNumbers = 0;
 
     for (let i = 1; i <= myNumber; i++) {
-        
         myNum = Number(input[i]);
         totalNumbers++;
         index++;
         totalSum+=myNum;
     }
-
     console.log((totalSum / totalNumbers).toFixed(2));
 }
 averageNumbers(["4", "3", "2" ,"4", "2"]);
