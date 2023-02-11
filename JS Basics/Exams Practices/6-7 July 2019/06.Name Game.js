@@ -1,24 +1,43 @@
 function nameGame (input) {
 
-let name = input[0];
+  let arrayElement = input[0];
+  let index = 1;
+  let nameLetters = Number(input[index]);
 
-let nameOnePoints = 0;
-let nameTwoPoints = 0;
+  let currentPoints = 0;
 
+  let player1Score = 0;
+  let player2Score = 0;
 
-for (i = 0; i < name.length; i++) {
-    let checkNumber = name[i]
-    let ascii = checkNumber.charCodeAt(checkNumber); 
-    console.log(ascii)
-    for (i = 1; i < input.length; i++) {
-    let playerOneNumbers = Number(input[i])
-  //  console.log(playerOneNumbers)
+  while (true) {
+
+    if (arrayElement == "Stop") {
+      break;
+    }
+   
+    for (let i = 0; i < arrayElement.length; i++) {
+      let currentLetter = arrayElement[i];
+      let charCodes = currentLetter.charCodeAt(0);
+      nameLetters = Number(input[index]);
+      index++;
+          
+      if (charCodes == nameLetters) {
+        currentPoints+=10;
+      } else {
+        currentPoints+=2;
+      }
+       player1Score = currentPoints;
     }
 
-}
+
+    console.log(`The winner is ${arrayElement} with {точките на победителя} points!`);
+
+    arrayElement = input[index];
+    index++;
 
 
 
+  }
 
 }
 
