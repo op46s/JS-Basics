@@ -105,3 +105,29 @@ function whileLoop (input) {
 
 let myMinNumber = Number.MIN_SAFE_INTEGER; // The Minimum number 
 let myMaxNumber = Number.MAX_SAFE_INTEGER; // The Maximum Number 
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+                                       // CHECK IF PRIME NUMBER OR NOT //
+
+function primeNonPrime(input) {
+
+    // let myNum = Number(input[0]);  
+
+    let isPrime = true;
+    for (let i = 2; i < myNum; i++) {    // Replace myNum with your variable name.
+      if (myNum % i === 0) {
+          isPrime = false;
+          break;
+      }
+    }
+
+            // if (isPrime) {
+            //     console.log(`${myNum} is A prime number.`);     // Print if the number is PRIME.
+            // } else {
+            //     console.log(`${myNum} is NOT prime number.`);   // Print if the number is NOT a prime number.
+            // }
+}
+primeNonPrime(["97"]);  
+  
+  /* ------------------------------------------------------------------------------------------------------------------------------ */
