@@ -6,8 +6,10 @@ function nameGame (input) {
 
   let currentPoints = 0;
 
-  let player1Score = 0;
-  let player2Score = 0;
+  let score = 0;
+  let winner = "";
+
+  let maxPoints = 0;
 
   while (true) {
 
@@ -26,20 +28,22 @@ function nameGame (input) {
       } else {
         currentPoints+=2;
       }
-       player1Score = currentPoints;
     }
-
-
-    console.log(`The winner is ${arrayElement} with {точките на победителя} points!`);
+          score = currentPoints;
+      if (score > maxPoints) {
+        maxPoints = score;
+        winner = arrayElement;
+      } else if (currentPoints >= maxPoints) {
+        maxPoints = currentPoints;
+        winner = arrayElement;
+      }
 
     arrayElement = input[index];
     index++;
-
-
-
+    currentPoints = 0; 
   }
-
+  
+  console.log(`The winner is ${winner} with ${maxPoints} points!`);
 }
-
 nameGame(["Ivan", "73", "20", "98", "110", "Ivo", "80", "65", "87", "Stop"]);
 //nameGame(["Pesho", "124", "34", "111", "97", "99", "Gosho", "98", "124", "88", "76", "18", "Stop"])
