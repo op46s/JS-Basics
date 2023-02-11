@@ -19,7 +19,7 @@ function sumTwoNumbers(input) {
     }
     console.log(`${amountIterations} combinations - neither equals ${magicNum}`); 
 }
-sumTwoNumbers(["1", "10", "5"]);
+//sumTwoNumbers(["1", "10", "5"]);
 //sumTwoNumbers(["23", "24", "20"]);
 //sumTwoNumbers(["88", "888", "1000"]);
 //sumTwoNumbers(["88", "888", "2000"]);
