@@ -4,12 +4,12 @@
 
 
 
-// function test(input) {
-
-// let myNum = Number(input[0]);
-
-// console.log(myNum % 100)
+function test(input) {
 
 
-// }
-// test(["123456"])
+
+console.log(72 / 19)
+
+
+}
+test(["72"]);
